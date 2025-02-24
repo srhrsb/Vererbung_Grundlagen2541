@@ -14,4 +14,14 @@ public class Truck extends  Car {
     public void setWeight(int weight) {
         this.weight = weight;
     }
+
+    @Override
+    public void setSpeed( int speed ){
+        if(speed > 100){ //zusätzliche Funktionalität
+            return;
+        }
+
+        super.setSpeed(speed); //Wiederverwendung der alten Funktionalität der Basisklasse
+    }
+
 }
